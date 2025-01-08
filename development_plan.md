@@ -65,7 +65,7 @@ Below is a step-by-step description of how data moves through the system:
    - DynamoDB is updated with the file's new state (e.g., `Processed`) and any additional metadata.
 
 4. **File Status Tracking:**
-   - Users can query the status of their uploaded files using the `/file-status` API endpoint. This provides details such as the file ID, current processing state (e.g., `Uploaded`, `Processing`, or `Processed`), and a history of state transitions with timestamps.
+   - Users can query the status of their uploaded files using the `/file-status` API endpoint. This provides details such as the file ID, current processing state (e.g., `Uploaded`, `Processed` , `Sent-to-coreview-play` or `sent-to-coreview-prod`), and a history of state transitions with timestamps.
 
 5. **Integration with Coreview:**
    - Processed files are sent to the **Coreview Play** environment for validation using the `/send-to-coreview-play` API.
@@ -132,7 +132,7 @@ The API endpoints serve as the primary interface for users to interact with the 
   - `fileId` *(string, required)*: Unique identifier for the file.
 - **Response**:
   - `fileId` *(string)*: Identifier for the file.
-  - `status` *(string)*: Current processing status (e.g., `Uploaded`, `Processed`).
+  - `status` *(string)*: Current processing status (e.g., `Uploaded`, `Processed`, `Sent-to-coreview-play` or `Sent-to-coreview-prod`).
   - `history` *(array)*: List of state transitions with timestamps.
 
 ---
