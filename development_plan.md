@@ -8,7 +8,7 @@ This document outlines a scalable, serverless AWS solution designed to standardi
 ## **2. Architecture**
 ### **2.1 Overview**
 The Fuel-Conversion-Service uses a serverless, event-driven architecture built on AWS. Files are uploaded to S3, where events trigger Lambda functions to process and convert data into a standardized XML format. DynamoDB tracks file metadata and processing states, while API Gateway provides secure endpoints for file uploads, status tracking, and integration with Coreview Play and Coreview Prod environments.
-![Initial draft of architecture](./architecture/architecture.svg)
+![Initial draft of architecture](./architecture.svg)
 
 ---
 
