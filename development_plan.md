@@ -251,7 +251,6 @@ The API endpoints serve as the primary interface for users to interact with the 
 
 4. **Documentation**:
    - Detailed API specifications and architecture diagrams.
-   - Supplier-specific integration guides for the first supported supplier.
 
 5. **Validated Integrations**:
    - Functional connections to both Coreview Play and Coreview Prod for processing and finalizing data.
